@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    font-family: system-ui, sans-serif;
+    color: #f8fafc;
+    background: linear-gradient(135deg, #111827, #312e81);
+}
+
+.card {
+    width: min(100%, 360px);
+    padding: 24px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 20px;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    margin-top: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    margin: 16px 0 4px;
+    font-size: 1.5rem;
+}
+
+.status {
+    margin-bottom: 24px;
+    color: #c7d2fe;
+}
+
+.links {
+    display: grid;
+    gap: 12px;
+}
+
+.btn {
+    padding: 12px;
+    color: #40399e;
+    font-weight: 600;
+    text-decoration: none;
+    background: #e0e7ff;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background: white;
+}
+
+#themeBtn {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.light {
+    color: #1e1b4b;
+    background: #eef2ff;
+}
+
+.light .card {
+    background: white;
+    border-color: #c7d2fe;
+}
+
+.light .status {
+    color: #6366a1;
+}
